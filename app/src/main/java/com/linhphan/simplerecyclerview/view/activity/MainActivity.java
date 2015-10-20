@@ -47,7 +47,7 @@ import java.util.ArrayList;
         // specify an adapter (see also next example)
         mData = new ArrayList<>();
         for (int i=0; i< 50; i++){
-            mData.add("item "+ i+1);
+            mData.add("item "+ String.valueOf(i + 1));
         }
         mAdapter = new MyAdapter(mData);
         mRecyclerView.setAdapter(mAdapter);
